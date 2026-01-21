@@ -15,6 +15,8 @@
   --dark-grays-90: #676B74;
   --color-orange: #F0671E;
   --color-light-black: #1A1A1A;
+  --color-dark-black: #2f2f2f;
+  --border-color: #F1F1F1;
 }
 
 body {
@@ -42,7 +44,7 @@ body {
 
 @media screen and (max-width:1440px) {
   .container {
-    max-width: 708px;
+    max-width: 910px;
   }
 }
 
@@ -366,6 +368,12 @@ footer .container-fluid {
   padding-right: 32px;
 }
 
+@media screen and (max-width:1440px) {
+  .work-card-container {
+    height: 303px;
+  }
+}
+
 .work-card-content {
   color: #020202;
   font-family: "JetBrains Mono";
@@ -385,4 +393,47 @@ footer .container-fluid {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+
+/* Playground */
+.playground-table {
+  margin-top: 2px;
+}
+
+.playground-table table {
+  width: 100%;
+}
+
+.playground-table table thead tr th {
+  background: #FAFAFA;
+  padding: 10px 12px;
+  font-weight: 500;
+  font-family: "JetBrains Mono";
+  color: var(--color-dark-black);
+}
+
+.playground-table table thead tr th:nth-child(3) {
+  text-align: end;
+}
+
+.playground-table table tbody tr td {
+  padding: 10px 12px;
+  border-bottom: 0.5px solid var(--border-color);
+}
+
+.playground-table table tbody tr td:nth-child(3) {
+  text-align: end;
+}
+
+.table-tools {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.table-tools-flex {
+  display: flex;
+  align-items: center;
+  gap: 15.33px;
 }
