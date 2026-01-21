@@ -17,6 +17,8 @@
   --color-light-black: #1A1A1A;
   --color-dark-black: #2f2f2f;
   --border-color: #F1F1F1;
+  --color-white: #fff;
+  --dark-gray: #2A2A2A;
 }
 
 body {
@@ -111,7 +113,7 @@ header {
 .nav-right-content {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 .nav-right-content a {
@@ -122,6 +124,16 @@ header {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.72px;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: transparent;
+  text-align: center;
+}
+
+.nav-right-content__btn.active {
+  background-color: var(--dark-gray);
+  color: var(--color-white);
 }
 
 
@@ -368,6 +380,11 @@ footer .container-fluid {
   padding-right: 32px;
 }
 
+.work-card-container img {
+  max-width: 360px;
+  max-height: 298px;
+}
+
 @media screen and (max-width:1440px) {
   .work-card-container {
     height: 303px;
@@ -436,4 +453,11 @@ footer .container-fluid {
   display: flex;
   align-items: center;
   gap: 15.33px;
+}
+
+.work-card video {
+  width: 100%;
+  max-width: 424px;
+  height: 362px;
+  object-fit: cover;
 }
