@@ -19,6 +19,7 @@
   --border-color: #F1F1F1;
   --color-white: #fff;
   --dark-gray: #2A2A2A;
+  --header-bg: #FEFEFE;
 }
 
 body {
@@ -35,6 +36,13 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   max-width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .container {
@@ -69,6 +77,13 @@ main {
   padding-bottom: 120px;
 }
 
+@media screen and (max-width:768px) {
+  main {
+    padding-top: 146px;
+    padding-bottom: 48px;
+  }
+}
+
 header {
   padding-top: 32px;
   padding-bottom: 16px;
@@ -77,6 +92,16 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
+  background: var(--header-bg);
+}
+
+header.scrolled {
+  border-bottom: 0.5px solid #E0E0E0;
+}
+
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .nav-left-content {
@@ -102,6 +127,10 @@ header {
   text-transform: uppercase;
 }
 
+.nav-left-content__location {
+  text-align: end;
+}
+
 .logo-title {
   color: var(--font-black);
 }
@@ -113,7 +142,13 @@ header {
 .nav-right-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
+}
+
+.nav-right-content__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .nav-right-content a {
@@ -136,7 +171,20 @@ header {
   color: var(--color-white);
 }
 
+@media screen and (max-width:768px) {
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
 
+  .nav-left-content,
+  .nav-right-content {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 
 
 
@@ -225,6 +273,12 @@ header {
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+
+@media screen and (max-width:768px) {
+  .flex-gap {
+    gap: 48px;
+  }
 }
 
 .tab-links__round {
@@ -350,6 +404,12 @@ footer .container-fluid {
   gap: 24px;
 }
 
+@media screen and (max-width:768px) {
+  .works-btn-flex {
+    margin-top: 32px;
+  }
+}
+
 .works-btn {
   color: var(--font-black);
   font-family: "JetBrains Mono";
@@ -388,6 +448,21 @@ footer .container-fluid {
 @media screen and (max-width:1440px) {
   .work-card-container {
     height: 303px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .work-card-container img {
+    max-width: 242px;
+    max-height: 166px;
+  }
+
+  .work-card {
+    padding: 32px;
+  }
+
+  .work-card-container {
+    height: 246px;
   }
 }
 
