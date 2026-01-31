@@ -27,12 +27,12 @@
 .dark-mode {
   --font-black: #F1F1F1;
   --font-gray: #616161;
-  --font-gray-2: #AAA;
+  --font-gray-2: #8A8A8A;
   --dark-grays-90: #676B74;
   --color-orange: #F0671E;
   --color-light-black: #1A1A1A;
   --color-dark-black: #2f2f2f;
-  --border-color: #F1F1F1;
+  --border-color: #2F2F2F;
   --color-white: #0A0A0A;
   --dark-gray: #FFF;
   --header-bg: #0A0A0A;
@@ -260,7 +260,7 @@ header.scrolled {
 .tab-links__content {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .links-content-flex {
@@ -277,6 +277,14 @@ header.scrolled {
   align-items: center;
   justify-content: center;
   background-color: var(--font-black);
+}
+
+.tab-links__box-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .olympus-box {
@@ -446,7 +454,7 @@ footer .container-fluid {
 
 .work-card {
   padding: 40px;
-  border: 1px solid #F1F1F1;
+  border: 1px solid var(--border-color);
 }
 
 .work-card-container {
@@ -486,7 +494,7 @@ footer .container-fluid {
 }
 
 .work-card-content {
-  color: #020202;
+  color: var(--font-black);
   font-family: "JetBrains Mono";
   font-size: 12px;
   font-style: normal;
@@ -543,6 +551,10 @@ footer .container-fluid {
   gap: 4px;
 }
 
+.table-tools svg {
+  width: 20px;
+}
+
 .table-tools-flex {
   display: flex;
   align-items: center;
@@ -554,4 +566,22 @@ footer .container-fluid {
   max-width: 424px;
   height: 362px;
   object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+  .table-tools span {
+    display: none;
+  }
+
+  .playground-table table thead tr th:nth-child(2),
+  .playground-table table thead tr td:nth-child(2) {
+    width: 35%;
+  }
+
+  .playground-table table tbody tr td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 185px;
+  }
 }
