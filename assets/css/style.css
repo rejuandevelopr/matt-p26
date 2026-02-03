@@ -34,7 +34,7 @@
   --color-orange: #F0671E;
   --color-light-black: #1A1A1A;
   --color-dark-black: #F1F1F1;
-  --border-color: #2F2F2F;
+  --border-color: #181818;
   --color-white: #0A0A0A;
   --dark-gray: #FFF;
   --header-bg: #0A0A0A;
@@ -74,9 +74,17 @@ body {
   padding-right: 16px;
 }
 
+.home .container {
+    max-width: 800px;
+  }
+
 @media screen and (max-width:1440px) {
   .container {
     max-width: 942px;
+  }
+
+  .home .container {
+    max-width: 708px;
   }
 }
 
@@ -588,7 +596,7 @@ footer .container-fluid {
  
 .playground-table table tbody tr td {
   padding: 10px 12px;
-  border-bottom: 0.5px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .playground-table table tbody tr td:nth-child(3) {
