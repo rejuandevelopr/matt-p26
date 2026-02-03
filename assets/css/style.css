@@ -432,6 +432,7 @@ footer .container-fluid {
   align-items: start;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width:768px) {
