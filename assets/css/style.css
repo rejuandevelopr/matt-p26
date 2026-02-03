@@ -95,13 +95,13 @@ p a {
 }
 
 main {
-  padding-top: 136px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 @media screen and (max-width:768px) {
   main {
-    padding-top: 146px;
+    padding-top: 160px;
     padding-bottom: 48px;
   }
 }
@@ -436,7 +436,7 @@ footer .container-fluid {
 
 @media screen and (max-width:768px) {
   .works-btn-flex {
-    margin-top: 32px;
+    margin-top: 10px;
   }
 }
 
