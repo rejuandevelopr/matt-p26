@@ -21,6 +21,7 @@
   --dark-gray: #2A2A2A;
   --header-bg: #FEFEFE;
   --body: #FEFEFE;
+  --work-btn: #2A2A2A;
   --header-border: #E0E0E0;
   --table-header: #F1F1F1;
   --dark-black: #000;
@@ -52,6 +53,7 @@
   --dark-gray: #FFF;
   --header-bg: #0A0A0A;
   --body: #0A0A0A;
+  --work-btn: #FFF;
   --header-border: #2F2F2F;
   --table-header: #181818;
   --icon-fill: #FFF;
@@ -493,9 +495,9 @@ footer .container-fluid {
   text-transform: uppercase;
 }
 
-/* .work-grid {
-  margin-top: 32px;
-} */
+.works-btn svg path {
+   fill: var(--work-btn);
+}
 
 .work-card {
   padding: 40px;
