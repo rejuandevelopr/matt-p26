@@ -493,9 +493,9 @@ footer .container-fluid {
   text-transform: uppercase;
 }
 
-.work-grid {
+/* .work-grid {
   margin-top: 32px;
-}
+} */
 
 .work-card {
   padding: 40px;
@@ -704,7 +704,15 @@ footer .container-fluid {
   margin-left: 12px;
 }
 
+.archive-section {
+  margin-top: 60px;
+}
 
+@media screen and (max-width:768px) {
+  .archive-section {
+    margin-top: 40px;
+  }
+}
 
 /* Footer CSS */
 footer svg path {
