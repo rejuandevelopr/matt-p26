@@ -24,6 +24,19 @@
   --header-border: #E0E0E0;
   --table-header: #F1F1F1;
   --dark-black: #000;
+  --icon-fill: #020202;
+  /* Icon Colors */
+  --markerplace-icon-bg: #020202;
+  --markerplace-icon-stroke: #fff;
+  --x-twitter: #020202;
+  --contra: #020202;
+  --cursor: #020202;
+  --v0-icon: #020202;
+  --Midjourney: #020202;
+  --framer-icon: #020202;
+  --play-icon: #020202;
+  --play-round: #fff;
+  --rive-icon: #020202;
 }
 
 .dark-mode {
@@ -41,6 +54,19 @@
   --body: #0A0A0A;
   --header-border: #2F2F2F;
   --table-header: #181818;
+  --icon-fill: #FFF;
+  /* Icon Colors */
+  --markerplace-icon-bg: #FFF;
+  --markerplace-icon-stroke: #020202;
+  --x-twitter: #F1F1F1;
+  --contra: #FFF;
+  --cursor: #FFF;
+  --v0-icon: #FFF;
+  --Midjourney: #FFF;
+  --framer-icon: #FFF;
+  --play-icon: #FFF;
+  --play-round: #020202;
+  --rive-icon: #FFF;
 }
 
 body {
@@ -75,8 +101,8 @@ body {
 }
 
 .home .container {
-    max-width: 800px;
-  }
+  max-width: 800px;
+}
 
 @media screen and (max-width:1440px) {
   .container {
@@ -287,7 +313,7 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--font-black);
+  background-color: var(--markerplace-icon-bg);
 }
 
 .tab-links__box-container {
@@ -321,7 +347,7 @@ header.scrolled {
 
 .tab-links__round {
   border-radius: 12.8px;
-  background: #0D0D0D;
+  background: var(--play-icon);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,7 +359,7 @@ header.scrolled {
   width: 9.6px;
   height: 9.6px;
   border-radius: 0.8px;
-  background: #FEFEFE;
+  background: var(--play-round);
   margin-left: 1px;
 }
 
@@ -346,6 +372,13 @@ header.scrolled {
 footer {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media screen and (max-width:768px) {
+  footer {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
 }
 
 footer .container-fluid {
@@ -520,31 +553,32 @@ footer .container-fluid {
 
 @media screen and (min-width: 1440px) {
   .work-minus-margin img {
-  margin-bottom: -80px;
-}
+    margin-bottom: -80px;
+  }
 
-.work-play-minus img {
-  margin-top: -60px;
-}
+  .work-play-minus img {
+    margin-top: -60px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .work-minus-margin img {
-  margin-bottom: -64px;
-}
+    margin-bottom: -64px;
+  }
 
-.work-play-minus img {
-  margin-top: -60px;
-}
+  .work-play-minus img {
+    margin-top: -60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .work-minus-margin img {
-  margin-bottom: -80px;
-}
-.work-play-minus img {
-  margin-top: -74px;
-}
+    margin-bottom: -80px;
+  }
+
+  .work-play-minus img {
+    margin-top: -74px;
+  }
 }
 
 
@@ -582,7 +616,7 @@ footer .container-fluid {
   width: 100%;
 }
 
-.playground-table table thead tr th { 
+.playground-table table thead tr th {
   background: var(--table-header);
   padding: 10px 12px;
   font-weight: 500;
@@ -593,7 +627,7 @@ footer .container-fluid {
 .playground-table table thead tr th:nth-child(3) {
   text-align: end;
 }
- 
+
 .playground-table table tbody tr td {
   padding: 10px 12px;
   border-bottom: 1px solid var(--border-color);
@@ -632,20 +666,20 @@ footer .container-fluid {
 
 @media screen and (max-width:1440px) {
   .work-card video {
-  width: 100%;
-  max-width: 424px;
-  height: 303px;
-  object-fit: cover;
-}
+    width: 100%;
+    max-width: 424px;
+    height: 303px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width:768px) {
   .work-card video {
-  width: 100%;
-  max-width: 100%;
-  height: 246px;
-  object-fit: cover;
-}
+    width: 100%;
+    max-width: 100%;
+    height: 246px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -668,4 +702,47 @@ footer .container-fluid {
 
 .olympus_Finance path {
   margin-left: 12px;
+}
+
+
+
+/* Footer CSS */
+footer svg path {
+  fill: var(--icon-fill);
+}
+
+footer svg rect {
+  stroke: var(--icon-fill);
+}
+
+.MakersPlace-icon path {
+  fill: var(--markerplace-icon-stroke);
+}
+
+.Xtwitter path {
+  fill: var(--x-twitter);
+}
+
+.contraIcon path {
+  fill: var(--contra);
+}
+
+.cursor-icon path {
+  fill: var(--cursor);
+}
+
+.v0-icon path {
+  fill: var(--v0-icon);
+}
+
+.Midjourney path {
+  fill: var(--Midjourney);
+}
+
+.framer-icon path {
+  fill: var(--framer-icon);
+}
+
+.rive-icon path {
+  fill: var(--rive-icon);
 }
