@@ -646,7 +646,8 @@ footer .container-fluid {
 }
 
 .table-tools span {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
 }
 
 .table-tools svg {
@@ -685,7 +686,7 @@ footer .container-fluid {
 }
 
 @media screen and (max-width:768px) {
-  .table-tools span {
+  table .table-tools span {
     display: none;
   }
 
